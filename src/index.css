@@ -1,0 +1,66 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.widget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+/* Welcome.css */
+
+/* Container */
+.welcome-container {
+  border-bottom: 1px solid #ffffff; /* White border for separation */
+  background-color: #121212; /* Dark mode background */
+  padding-bottom: 20px;
+}
+
+/* Content Area */
+.content {
+  color: #e0e0e0; /* Light gray text for contrast */
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+.heading {
+  color: #bb86fc; /* Accent color for headings */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Ordered List */
+.requirements-list {
+  padding: 0;
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.requirements-list li {
+  position: relative;
+  padding-left: 40px;
+}
