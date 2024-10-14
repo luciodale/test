@@ -35,49 +35,51 @@ export function Welcome() {
         </div>
 
         {showRequirements && (
-          <ol className="requirements-list">
-            <li>
-              <strong>City Selection</strong>
-              <p>
-                The user should be able to select one of the cities returned by
-                the <code style={{ color: "orange" }}>GET /api/cities</code>{" "}
-                endpoint.
-              </p>
-            </li>
-            <li>
-              <strong>Weather Retrieval</strong>
-              <p>
-                The app can retrieve the weather information of the selected
-                city by calling the{" "}
-                <code style={{ color: "orange" }}>
-                  GET /api/weather/:lat/:lng
-                </code>{" "}
-                endpoint.
-              </p>
-            </li>
-            <li>
-              <strong>Weather Display</strong>
-              <p>
-                Display the temperature, humidity, and condition in a nice
-                widget.
-              </p>
-            </li>
-            <li>
-              <strong>Enhanced Data</strong>
-              <p>
-                The{" "}
-                <code style={{ color: "orange" }}>
-                  GET /api/weather/:lat/:lng
-                </code>{" "}
-                endpoint should only return additional weather information when
-                the request includes a valid Authorization header with a bearer
-                token. The token is{" "}
-                <code style={{ color: "yellow" }}>
-                  af6627ea-89de-4ac9-8e98-1d500dc85645
-                </code>
-              </p>
-            </li>
-          </ol>
+          <>
+            <div
+              style={{
+                margin: "auto",
+                maxWidth: 1000,
+                paddingBottom: 20,
+              }}
+            >
+              Build a weather widget that allows users to view the current
+              weather for a selected city. The user should be able to choose
+              from a list of cities, and upon selection, the widget should
+              display the weather information for that specific city. Your task
+              is to implement this functionality, ensuring that the city
+              selection and weather display are intuitive and responsive.
+            </div>
+            <div className="requirements-list">
+              <div>
+                <strong>API</strong>
+                <div>
+                  <code style={{ color: "orange" }}>GET /api/cities</code>
+                </div>
+                <div>
+                  <code style={{ color: "orange" }}>
+                    GET /api/weather/:lat/:lng
+                  </code>
+                </div>
+              </div>
+
+              <div>
+                <strong>Enhanced Data</strong>
+                <div>
+                  The{" "}
+                  <code style={{ color: "orange" }}>
+                    GET /api/weather/:lat/:lng
+                  </code>{" "}
+                  endpoint should only return additional weather information
+                  when the request includes a valid Authorization header with a
+                  bearer token. The token is{" "}
+                  <code style={{ color: "yellow" }}>
+                    af6627ea-89de-4ac9-8e98-1d500dc85645
+                  </code>
+                </div>
+              </div>
+            </div>
+          </>
         )}
       </div>
     </div>
